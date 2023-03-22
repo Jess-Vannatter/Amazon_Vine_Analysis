@@ -1,6 +1,6 @@
 # Amazon_Vine_Analysis
 
-## Over View of Analysis
+## Overview of Analysis
 - The purpose of this analysis was to determine if there was any form of bias created as a result of the Vine review program. Specifically we wanted to see if customers apart of the  Vine program had a positive/ negative bias towards the subset of products listed on the amazon website as result of being a part of the "paid-for" program. As compared to customers that were not apart of the Vine program, which of course was free. We pulled data from an Amazon AWS bucket on pet supply product reviews and used Pyspark to parse the data and create data sets in order to determine if any bias was present. For more accurate results, we filtered the initial data set from the AWS bucket to show reviews with votes greater than or equal to 20 to pick reviews that are more likely top be helpful in our analysis and to avoid having division by zwero errors. In addition, we continued to filter the reviews further by selecting only reviews where the number of "helpful votes" was equal toor greater than 50% of the "total votes". this was to filter out low valued outliers and to again use data that will be avoerall more helpfulll for the analysis.  
 
 ## Results
